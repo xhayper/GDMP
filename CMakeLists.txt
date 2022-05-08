@@ -6,9 +6,9 @@ set(CMAKE_C_STANDARD 11)
 set(PROJECT_NAME_CLIENT ${PROJECT_NAME}_client)
 set(PROJECT_NAME_SERVER ${PROJECT_NAME}_server)
 
+add_subdirectory(external/cocos-headers)
 add_subdirectory(external/enet)
 add_subdirectory(external/fmt)
-add_subdirectory(external/cocos-headers)
 
 include_directories(external/enet/include)
 

@@ -1,4 +1,4 @@
-// #include "hackpro_ext.h"
+#include "hackpro_ext.h"
 #include <fmt/core.h>
 #include "gd.h"
 
@@ -7,7 +7,7 @@ DWORD WINAPI MainThread(LPVOID lpParam)
   if (InitialiseHackpro())
   {
     fmt::print("Oh hell naw");
-    return S_NOTOK;
+    return S_FALSE;
   }
 
   return S_OK;
